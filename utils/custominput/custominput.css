@@ -1,0 +1,9 @@
+.custom_input{
+    width: 90%;
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    outline: 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 200;
+}

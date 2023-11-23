@@ -1,0 +1,28 @@
+.brand_logo{
+    background-color: black;
+    color: white;
+    padding: 10px 0.75rem;
+    border-radius: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media screen and (min-width: 322px) and (max-width: 480px) {
+ .brand_logo{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 1px 1rem;
+    border-radius: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+}
+@media screen and (min-width: 100px) and (max-width: 900px){
+ .brand_logo{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 10px 0.35rem;
+    border-radius: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+}

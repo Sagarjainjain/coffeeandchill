@@ -1,0 +1,23 @@
+[
+  {
+    "_id": 458778365,
+    "product_title": "Cappuccino",
+    "product_image": "https://res.cloudinary.com/dn0wv4pfj/image/upload/v1700376241/c00vxc4vvirklb4j9j4q.png",
+    "discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit laoreet diam.",
+    "price": 199
+  },
+  {
+    "_id": 458778548,
+    "product_title": "Donut",
+    "product_image": "https://res.cloudinary.com/dn0wv4pfj/image/upload/v1700455968/lg9rlu4kmsnohg5iy0vm.png",
+    "discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit laoreet diam.",
+    "price": 250
+  },
+  {
+    "_id": 458778525,
+    "product_title": "CupCake",
+    "product_image": "https://res.cloudinary.com/dn0wv4pfj/image/upload/v1700455852/xmbwbyxzy2ttn3gtqnge.png",
+    "discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit laoreet diam.",
+    "price": 150
+  }
+]

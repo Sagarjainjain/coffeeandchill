@@ -1,0 +1,104 @@
+.productcard_container {
+  height: 400px;
+  width: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  align-items: flex-end;
+  padding: 2rem 0;
+}
+
+.productcard_container-image {
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.productcard_container-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(5px 7px 4px #868686);
+}
+.productcard_container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 60%;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem 0.75rem;
+}
+.productcard_container-title button {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+}
+.productcard_container-title p {
+  font-size: 22px;
+  margin: 5px 0 20px;
+}
+.productcard_container-title button:hover {
+  background-color: #474747;
+}
+.productcard_container-title h1 {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+}
+.productcard_container-title p {
+  text-align: center;
+}
+.productcard_container-qunatity {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.productcard_container-qunatity p {
+  margin: 0;
+}
+.productcard_container-qunatity button {
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 322px) and (max-width: 500px) {
+  .productcard_container {
+    height: 350px;
+    min-width: 200px;
+    gap: 1.5rem;
+  }
+  .productcard_container-image {
+    height: 50%;
+  }
+  .productcard_container-title {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 321px) {
+  .productcard_container {
+    height: 350px;
+    min-width: 200px;
+    gap: 1.5rem;
+  }
+  .productcard_container-image {
+    height: 50%;
+  }
+  .productcard_container-title {
+    width: 100%;
+  }
+}

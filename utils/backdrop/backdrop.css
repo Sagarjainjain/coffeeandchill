@@ -1,0 +1,123 @@
+.backdrop_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50rem;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000e1;
+    z-index: 5;
+}
+
+.backdrop-card {
+    height: 450px;
+    width: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    align-items: flex-end;
+    padding: 2rem 0;
+}
+
+.backdrop-card-image{
+    height: 65%;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.backdrop-card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(5px 7px 4px #181717);
+}
+.backdrop-card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 60%;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem 0.75rem;
+}
+.backdrop-card-title button {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+    outline: 0;
+    border: 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.backdrop-card-title p {
+    font-size: 22px;
+    margin: 5px 0 20px;
+}
+.backdrop-card-title button:hover {
+    background-color: #474747;
+}
+.backdrop-card-title h1 {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+.backdrop-card-title p {
+    text-align: center;
+}
+.backdrop-card-qunatity {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+}
+.backdrop-card-qunatity p {
+    margin: 0;
+}
+.backdrop-card-qunatity button {
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+}
+.backdrop_cancel {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(30px);
+}
+.backdrop-button_cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media screen and (min-width: 100px) and (max-width:321px ) {
+    .backdrop-card {
+        height: 350px;
+        width: 85%;
+    }
+    .backdrop-card-image {
+        height: 50%;
+    }
+    .backdrop-card-title {
+        width: 200px;
+    }
+    
+}

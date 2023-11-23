@@ -1,0 +1,45 @@
+.latestupdate_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: 0;
+}
+.latestupdate-card {
+  width: 90%;
+  height: 200px;
+  background-color: gray;
+  border-radius: 10px;
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media screen and (min-width: 322px) and (max-width: 500px) {
+  .latestupdate_container {
+    align-items: flex-end;
+    height: 200px;
+    margin: 3rem 0;
+  }
+  .latestupdate-card {
+    width: 95%;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 321px) {
+  .latestupdate_container {
+    height: 200px;
+  }
+  .latestupdate-card {
+    width: 95%;
+    height: 100px;
+  }
+}
