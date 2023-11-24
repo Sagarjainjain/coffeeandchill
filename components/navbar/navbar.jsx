@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Navbar = () => {
 const [istoggle, setIsToggle]  = useState(false);
-const isloggedis = false;
+const isloggedis = true;
   return (
     <div className="navbar">
       <div className="navbar_logo">

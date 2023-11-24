@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import galleryphotos from "../../assets/api/images.json";
 // import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "./imagegallery.css";
@@ -8,7 +9,10 @@ const ImageGallery = () => {
     <div className="Image_gallery-container">
       <div className="image_gallery_title">
         <h1>Image Gallery</h1>
-        <button>View All</button>
+
+        <Link href="/imagegallery">
+          <button>View All</button>
+        </Link>
       </div>
       <div className="image_gallery-slider">
         {galleryphotos.map((item) => (
