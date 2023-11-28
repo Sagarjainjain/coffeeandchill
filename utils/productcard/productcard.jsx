@@ -4,17 +4,15 @@ import "./productcard.css";
 
 import { useState } from "react";
 
-const ProductCard = ( productitem, setback ) => {
+const ProductCard = ({productitem, setisBAckDrop}) => {
   const [isaddtotray, setisaddtotray] = useState(false);
+
   return (
     <div className="product_container">
       <div className="product_slider">
-        {productitem.product.map((product) => (
+        {productitem.map((product) => (
           <div key={product._id} className="productcard_container">
-            <div
-              className="productcard_container-image"
-              onClick={() => setback(false)}
-            >
+            <div className="productcard_container-image" onClick={setisBAckDrop}>
               <img src={product.product_image} alt="daat" />
             </div>
             <div className="productcard_container-title">
@@ -27,9 +25,7 @@ const ProductCard = ( productitem, setback ) => {
                   <button>-</button>
                 </div>
               ) : (
-                <button onClick={() => setisaddtotray(true)}>
-                  Add To Tray
-                </button>
+                <button onClick={() => setisaddtotray(true)}>Add To Tray</button>
               )}
             </div>
           </div>

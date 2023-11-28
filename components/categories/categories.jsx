@@ -4,13 +4,9 @@ import Category from "../../assets/api/categories.json";
 import Image from "next/image";
 import ProductCard from "@/utils/productcard/productcard";
 import productitem from "../../assets/api/products.json";
-import BackDrop from "@/utils/backdrop/backdrop";
-import { useState } from "react";
 
 
-const Categories = () => {
-  const [isbackdrop, setisbackdrop] = useState(false)
-  
+const Categories = ({ setisBAckDrop }) => {
   return (
     <div className="container">
       <div className="categories_container">
@@ -32,10 +28,7 @@ const Categories = () => {
           ))}
         </div>
       </div>
-      <ProductCard setback={setisbackdrop} product={productitem} />
-    {isbackdrop ? 
-      <BackDrop /> : <div></div>
-    }
+      <ProductCard setisBAckDrop={setisBAckDrop} productitem={productitem} />
     </div>
   );
 };
