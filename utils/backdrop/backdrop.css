@@ -3,23 +3,30 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50rem;
+  top: 0;
+  bottom: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background-color: #a0a0a0a1;
-  z-index: 5;
+  
+  z-index: 2;
 }
 
 .backdrop-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
   height: 500px;
   width: 250px;
-  position: relative;
+
   display: flex;
   justify-content: center;
 
   align-items: flex-end;
   padding: 2rem 0;
+  animation: popupanimation 1s normal;
 }
 
 .backdrop-card-image {
@@ -131,3 +138,5 @@
     width: 100%;
   }
 }
+
+

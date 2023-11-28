@@ -15,7 +15,7 @@ const changename = () => {
     setisBAckDrop((prev) => !prev);
 }
   return (
-    <div>
+    <div className="container">
       <Navbar/>
       <Header />
       <LatestUpdateCard />
