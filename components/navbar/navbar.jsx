@@ -26,7 +26,9 @@ const isloggedis = true;
             <div className="navbar_links_loggedin">
               <p>Make an Order</p>
               <div className="navbar_line" />
-              <p>Profile</p>
+              <Link href="/profile/tray">
+                <p>Profile</p>
+              </Link>
             </div>
           ) : (
             <Link href="/auth/login">
@@ -56,7 +58,9 @@ const isloggedis = true;
               <div className="navbar_links-mobile_loggedin">
                 <p>Make an Order</p>
                 <div className="navbar_line" />
-                <p>Profile</p>
+                <Link href="/profile/tray">
+                  <p>Profile</p>
+                </Link>
               </div>
             ) : (
               <Link href="/auth/login">
@@ -79,7 +83,9 @@ const isloggedis = true;
           <div className="navbar_links-tablet_loggedin">
             <p>Make an Order</p>
             {/* <div className="navbar_line" /> */}
-            <p>Profile</p>
+            <Link href="/profile/tray">
+              <p>Profile</p>
+            </Link>
           </div>
         ) : (
           <div style={{ display: "none" }} />
