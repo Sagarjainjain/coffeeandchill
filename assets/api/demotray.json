@@ -8,7 +8,7 @@
       "discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit laoreet diam.",
       "price": 199
     },
-    "quanity": 2
+    "quanity": 1
   },
   {
     "_id": 19090,
@@ -19,28 +19,7 @@
       "discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit laoreet diam.",
       "price": 150
     },
-    "quanity": 1
-  },
-  {
-    "_id": 19095,
-    "product":   {
-      "_id": 458778525,
-      "product_title": "CupCake",
-      "product_image": "https://res.cloudinary.com/dn0wv4pfj/image/upload/v1700455852/xmbwbyxzy2ttn3gtqnge.png",
-      "discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit laoreet diam.",
-      "price": 150
-    },
-    "quanity": 1
-  },
-  {
-    "_id": 19095,
-    "product":   {
-      "_id": 458778525,
-      "product_title": "CupCake",
-      "product_image": "https://res.cloudinary.com/dn0wv4pfj/image/upload/v1700455852/xmbwbyxzy2ttn3gtqnge.png",
-      "discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit laoreet diam.",
-      "price": 150
-    },
-    "quanity": 1
+    "quanity": 2
   }
+
 ]
