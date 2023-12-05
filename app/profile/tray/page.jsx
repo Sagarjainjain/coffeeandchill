@@ -48,10 +48,29 @@ const Tray = () => {
             </div>
           ))}
         </div>
+        {/* larger devices */}
         <div className="tray_subtotal_container">
           <div className="tray_subtotal-card">
+            <div className="tray_subtotal-card_total">
+              <h5>Net Amount: ₹{NetAmount}/-</h5>
+            </div>
+
+            <div className="tray_subtotal-card_taxes">
+              <p>CGST: {gst}%</p>
+              <p>SGST: {gst}%</p>
+              <h4>Subtotal: ₹{Math.ceil(Subtotal)}/-</h4>
+            </div>
+
+            <div className="tray_subtotal-footer_large">
+              <button>Proceed to Checkout</button>
+            </div>
+          </div>
+        </div>
+        {/* small devices */}
+        <div className="tray_subtotal_container_mobile">
+          <div className="tray_subtotal-card_mobile">
             <div
-              className="tray_subtotal-card_total"
+              className="tray_subtotal-card_mobile_total"
               onClick={() => setcollapsible((prev) => !prev)}
             >
               {collapsible ? (
@@ -62,9 +81,9 @@ const Tray = () => {
               <IoIosArrowDown size={20} />
             </div>
             {collapsible ? (
-              <div className="tray_subtotal-card_taxes">
-                <p>CGST: 3%</p>
-                <p>SGST: 3%</p>
+              <div className="tray_subtotal-card_taxes_mobile">
+                <p>CGST: {gst}%</p>
+                <p>SGST: {gst}%</p>
                 <h4>Subtotal: ₹{Math.ceil(Subtotal)}/-</h4>
               </div>
             ) : (

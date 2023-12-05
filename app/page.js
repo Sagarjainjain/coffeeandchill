@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar/navbar";
 import ImageGallery from "@/components/imagegallery/imagegallery";
 import BackDrop from "@/utils/backdrop/backdrop";
 import { useState } from "react";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   const[isbackdrop, setisBAckDrop] = useState(false);
@@ -24,7 +25,7 @@ const changename = () => {
       <BackDrop setisBAckDrop={changename}/>
       }
       <ImageGallery/>
-
+      <Footer/>
     </div>
   );
 }
