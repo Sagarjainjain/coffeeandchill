@@ -1,0 +1,60 @@
+.popupad_main-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.popupad_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 5px;
+  position: fixed;
+
+  z-index: 1000;
+}
+.popupad_cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(16px, -20px);
+  border: 1px solid lightgray;
+  cursor: pointer;
+  position: absolute;
+}
+.popupad_header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.popupad_content {
+  width: 100%;
+  height: 100%;
+}
+.popupad_content img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+@media screen and (min-width: 322px) and (max-width: 480px) {
+  .popupad_container {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 321px) {
+  .popupad_container {
+    width: 90%;
+  }
+}
